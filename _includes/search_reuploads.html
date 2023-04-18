@@ -1,0 +1,12 @@
+<form method="get" id="search" action={{ site.baseurl }}/ onsubmit="event.preventDefault(); changeFormAction(event);">
+    <input type="text" name= "chapter" id="search__input" placeholder="Go to re-uploaded Chapter&hellip;"/ autocomplete="off">
+    <button type="submit" class="btn btn-bordered" tabindex="-1">Search
+    </button>
+  </form>
+  <script>
+  function changeFormAction(event) {
+    var item = document.getElementById("search__input").value;
+    window.location.href = "{{ site.baseurl }}" + "/reuploads/" + item + "/";
+    
+  }
+  </script>

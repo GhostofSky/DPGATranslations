@@ -44,6 +44,11 @@ collections:
     permalink: /:collection/:title/
     sort_by: chapter
 
+  reuploads:
+    output: true
+    permalink: /:collection/:title/
+    sort_by: chapter
+
 plugins:
   - jekyll-paginate
 
